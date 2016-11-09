@@ -1,5 +1,5 @@
 # DomoRobotoSan
-Japanese sentence generator constructed using oject orientated programming language C++.
+Japanese sentence generator constructed using object orientated programming language C++. This is essentially Japanese revision. I hate flashcards but can cope with programming.
 
 ## The Plan
 A sentence is a vector of word objects. 
@@ -12,7 +12,7 @@ For an object or subject to a sentence we could group a few words. Like an adjec
 
 ### Example 2
 To describe how something looks or appears to be you add -soo onto the adjective. 
-Thus the function Adjective::SooIfy() will exist.
+Thus the function Adjective::SooIfy() will exist (name TBC).
 
 You would call this SooIfy when in an appropriate sentence.
 
