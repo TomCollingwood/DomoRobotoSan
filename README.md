@@ -32,8 +32,8 @@ As this is a pet project I do not want to be too meticulous planning everything 
 2.  Create a way and syntax for storing a list of Japanese words in a text file (complete with all variations - all tenses for verbs for example and parameters). Might use hex for parameters eg store parameters as A5 for bools 1010 0101.
 3.  Create basic sentence generator function.
 4.  I will take a chapter of the text book adding vocabularly to the word list and adding sentence structures to the sentence generator function. If sentence structures is conditional on the words then we add paramaters and functions to the word objects to tell which words we can use for a given sentence structure. 
-..*E.g. -na adjectives are essentially nouns. All the conjugation rules for both nouns and na-adjectives are the same. These adjectives can modify nouns by adding na in-between. 
-..*-i adjectives however are completely different.
+⋅⋅*E.g. -na adjectives are essentially nouns. All the conjugation rules for both nouns and na-adjectives are the same. These adjectives can modify nouns by adding na in-between. 
+⋅⋅*-i adjectives however are completely different.
 5. I will then test the code and debug it accordingly.
 6. GOTO $4
 
