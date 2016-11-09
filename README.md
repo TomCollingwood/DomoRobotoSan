@@ -1,0 +1,2 @@
+# DomoRobotoSan
+Japanese sentence generator
