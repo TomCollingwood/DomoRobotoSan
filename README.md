@@ -7,8 +7,9 @@ Markov chains with a twist. As input and output have a whole bunch of words.
 
 ### Example
 
-[ NounGroupAStates ] => [ 'no' , VerbGroupCStates  ]
-[ 'no' ] => [ NounGroupAStates ]
+[ NounGroupAStates ] => [ 'no' , VerbGroupCStates  ];
+
+[ 'no' ] => [ NounGroupAStates ];
 
 ## Plan B
 A sentence is a vector of word objects. 
