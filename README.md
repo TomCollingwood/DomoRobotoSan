@@ -1,7 +1,16 @@
 # DomoRobotoSan
 Japanese sentence generator constructed using object orientated programming language C++. This is essentially Japanese revision. I hate flashcards but can cope with programming.
 
-## The Plan
+## Plan A
+
+Markov chains with a twist. As input and output have a whole bunch of words.
+
+### Example
+
+[ NounGroupAStates ] => [ 'no' , VerbGroupCStates  ]
+[ 'no' ] => [ NounGroupAStates ]
+
+## Plan B
 A sentence is a vector of word objects. 
 A word object can be a particle, adjective, noun, adverb etc using inheritance.
 Different words have different functions attached.
