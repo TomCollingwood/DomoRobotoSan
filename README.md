@@ -1,9 +1,16 @@
 # DomoRobotoSan
-Japanese sentence generator constructed using object orientated programming language C++. This is essentially Japanese revision. I hate flashcards but can cope with programming.
+Japanese sentence generator constructed using object orientated programming language C++. This is essentially Japanese revision. I hate flashcards but can cope with programming. This readme.md has become a plan for the upcoming project.
 
 ## Plan A
-
 Markov chains with a twist. As input and output have a whole bunch of words.
+
+You would also have parameters for the sentence in general. 
+Such as whether to use formal or casual language.
+Some special grammar rules require certain forms of verb. So some states contain their own markov chain (at most I could see it going two nests deep - n^2 ). 
+
+Need to somehow avoid: The chair is a chair is a chair is a chair is a chair. for example. Or the chair was a chair is a chair. Long strings like that. I would hack this using integers checking how deep into the inception we are. However Japanese structure is different to English so we will see how we can hack it. 
+
+Plan B is much more complicated and obtuse. I could use Markov chains to generate sentence structure then fill in those gaps with more chains. So have a chain for a noun. This is looking interesting.
 
 ### Example
 
