@@ -1,4 +1,18 @@
+#!/usr/bin/python
 import random
+
+from optparse import OptionParser
+
+
+parser = OptionParser()
+parser.add_option("-s", "--sentencetype", dest="_s", default=0,
+                  help="which type of sentence", metavar="SENTENCE")
+#parser.add_option("-q", "--quiet",
+#                  action="store_false", dest="verbose", default=True,
+#                  help="don't print status messages to stdout")
+
+(options, args) = parser.parse_args()
+
 
 endwords = ["",", doomo"]
 startwords = ["","sumimasen, ","hai, ","aa,","hajimemashite, ","konnichiwa, ","ohayoo gozaimasu, ","konbanwa, ", "oyasumi nasai", "kochira e"]
@@ -17,8 +31,6 @@ names = ["Tom san", "Chereen san", "Kao san", "Yoko sensei", "Tito san"]
 nouns = nounA + nounB + names
 verbs=ownverb
 
-
-#!/usr/bin/python
 def pickone( _list ):
 	return _list[random.randint(0,len(_list)-1)];
 
@@ -51,13 +63,13 @@ def generatesentence( _sentencetype ):
 
 	elif(_sentencetype==6):
 		return 
-		
+
 	elif(_sentencetype==7):
 		return generatesentence(random.randint(0,2))+" ga, "+generatesentence(random.randint(0,2))
 
 print "\n"
 for i in range(10):
-	print generatesentence(5)
+	print generatesentence(_s)
 print "\n"
 
 
